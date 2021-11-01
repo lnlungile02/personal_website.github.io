@@ -8,112 +8,116 @@
         <link rel="stylesheet" href="me.css">
     </head>
     <nav id="navbar" class="nav">
-        <ul class="nav-list">
-            <li>
-                <a href="#welcome">About Me</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#project">Projects</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
-    </nav>
-
-    <!-- END NAV -->
-    <div id="welcome_photo" class="welcome_pic">
-        <img class="welcome-image" src="Lungile_Njakazi.png" alt="Lungile_Njakazi" style="width:100%;height: auto"
-            style="position: absolute" />
-    </div>
-    <!-- START WELCOME SECTION -->
-
-    <section id="welcome" class="welcome-section">
-        <h1>Hey I am Lungile Njakazi</h1>
-        <p>A Data Engineering Recruit at Umuzi</p>
-        <p style="text-align:center;">“I joined UMUZI in 2021 and I am eager to put what I’ve
-            learned in the classroom into use in a practical sense.
-            I pride myself on being detail-oriented, analytical, and driven. .”</p>
-    </section>
-
-    <!-- END WELCOME SECTION -->
-
-    <!-- START SKILLS SECTION -->
-
-    <section id="skills" class="skills-section">
-
-        <h1 font color="black">My Skills</h1>
-        <p>As a Data Engineering intern I am still working on refining my skills which include:</p>
-        <li>Python</li>
-        <li>Problem Solving</li>
-        <li>Communication Skills</li>
-        <li>Basic Excel</li>
-
-    </section>
-
-    <!-- END SKILLS SECTION -->
-
-    <!-- START Education SECTION -->
-
-    <section id="education" class="education-section">
-
-        <h2>My Education</h2>
-
-        <li>Bsc Information Technology</li>
 
 
-    </section>
-
-    <!-- END Education SECTION -->
-
-    <!-- START PROJECT SECTION -->
-
-    <section id="project" class="project-section">
-
-        <h2>My Projects</h2>
-        <p>I have not completed any projects as yet, I will add them as I go:</p>
-
-
-    </section>
-
-    <!-- END PROJECT SECTION -->
-
-
-
-    <!-- START CONTACT SECTION -->
-
-    <section id="contact" class="contact-section">
-        <div class="contact-section-header">
-            <h2>Contact Information</h2>
+        <div class="topnav" id="myTopnav">
+            <a href="#welcome" class="active">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#project">Projects</a>
+            <a href="#contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-        <div class="contact-links">
-            <a href="https://facebook.com/lungileminenhle" target="_blank" class="btn contact-details"><i
-                    class="fab fa-facebook-square"></i> Facebook</a>
-            <a id="profile-link" href="https://github.com/lnlungile02" target="_blank" class="btn contact-details"><i
-                    class="fab fa-github"></i> GitHub</a>
+
+        <!-- END NAV -->
+        <div id="welcome_photo" class="welcome_pic">
+            <img class="welcome-image" src="Lungile_Njakazi.png" alt="Lungile_Njakazi" style="width:100%;height: auto"
+                style="position: absolute" />
         </div>
-    </section>
+        <!-- START WELCOME SECTION -->
 
-    <!-- END CONTACT SECTION -->
+        <section id="welcome" class="welcome-section">
+            <h1>Hey I am Lungile Njakazi</h1>
+            <p>A Data Engineering Recruit at Umuzi</p>
+            <p style="text-align:center;">“I joined UMUZI in 2021 and I am eager to put what I’ve
+                learned in the classroom into use in a practical sense.
+                I pride myself on being detail-oriented, analytical, and driven. .”</p>
+        </section>
 
-    <!-- START FOOTER SECTION -->
+        <!-- END WELCOME SECTION -->
 
-    <footer>
+        <!-- START SKILLS SECTION -->
+
+        <section id="skills" class="skills-section">
+
+            <h1 font color="black">My Skills</h1>
+            <p>As a Data Engineering intern I am still working on refining my skills which include:</p>
+            <li>Python</li>
+            <li>Problem Solving</li>
+            <li>Communication Skills</li>
+            <li>Basic Excel</li>
+
+        </section>
+
+        <!-- END SKILLS SECTION -->
+
+        <!-- START Education SECTION -->
+
+        <section id="education" class="education-section">
+
+            <h2>My Education</h2>
+
+            <li>Bsc Information Technology</li>
 
 
-        <p>
-            .
-        </p>
+        </section>
 
-    </footer>
+        <!-- END Education SECTION -->
 
-    <!-- END FOOTER SECTION -->
+        <!-- START PROJECT SECTION -->
+
+        <section id="project" class="project-section">
+
+            <h2>My Projects</h2>
+            <p>I have not completed any projects as yet, I will add them as I go:</p>
+
+
+        </section>
+
+        <!-- END PROJECT SECTION -->
+
+
+
+        <!-- START CONTACT SECTION -->
+
+        <section id="contact" class="contact-section">
+            <div class="contact-section-header">
+                <h2>Contact Information</h2>
+            </div>
+            <div class="contact-links">
+                <a href="https://facebook.com/lungileminenhle" target="_blank" class="btn contact-details"><i
+                        class="fab fa-facebook-square"></i> Facebook</a>
+                <a id="profile-link" href="https://github.com/lnlungile02" target="_blank"
+                    class="btn contact-details"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </section>
+
+        <!-- END CONTACT SECTION -->
+
+        <!-- START FOOTER SECTION -->
+
+        <footer>
+
+
+            <p>
+                .
+            </p>
+
+        </footer>
+
+        <!-- END FOOTER SECTION -->
 </body>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+    }
+</script>
 
 </html>
