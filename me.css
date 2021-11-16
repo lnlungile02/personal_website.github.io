@@ -172,7 +172,6 @@ img {
 color: var(--main-white);
 }
 .skills-section {
-  text-align: center;
   padding: 10rem 2rem;
 }
 .skills-section > p {
