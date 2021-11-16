@@ -181,8 +181,13 @@ color: var(--main-white);
 
 .projects-section {
   text-align: center;
-  padding: 10rem 2rem;
+  padding: 35px;
   background: var(--main-blue);
+}
+
+.projects-section > p {
+  padding: 75px;
+
 }
 
 .projects-section-header {
