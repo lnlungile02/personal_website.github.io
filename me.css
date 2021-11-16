@@ -32,6 +32,9 @@ html {
     height: auto;
   }
 
+p {
+  padding: 35px;
+}
 
 
 /* 1200px / 16px = 75em */
