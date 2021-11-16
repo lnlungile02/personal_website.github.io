@@ -171,7 +171,10 @@ img {
 .welcome-section > h1 {
 color: var(--main-white);
 }
-
+.skills-section {
+  text-align: center;
+  padding: 10rem 2rem;
+}
 .skills-section > p {
   font-size: 3rem;
   font-weight: 200;
