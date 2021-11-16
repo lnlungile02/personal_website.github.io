@@ -172,6 +172,7 @@ color: var(--main-white);
 .skills-section > p {
   font-size: 3rem;
   font-weight: 200;
+  padding: 35px;
 
 }
 
@@ -181,6 +182,10 @@ color: var(--main-white);
   text-align: center;
   padding: 10rem 2rem;
   background: var(--main-blue);
+}
+.projects-section > p {
+  padding: 35px;
+
 }
 
 .projects-section-header {
