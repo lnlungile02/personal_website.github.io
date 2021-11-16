@@ -176,6 +176,10 @@ color: var(--main-white);
 
 }
 
+.skills-section > ul {
+  padding: 75px;
+}
+
 
 /* Projects section */
 
