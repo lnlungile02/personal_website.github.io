@@ -81,6 +81,7 @@ h2 {
 
 ul {
   list-style: none;
+
 }
 
 a {
@@ -170,28 +171,49 @@ color: var(--main-white);
 }
 
 .skills-section > p {
-  font-size: 3rem;
-  font-weight: 200;
-  padding: 75px;
+  padding-left: 75px;
+  padding-bottom: 20px;
 
 }
 
-.skills-section > ul {
-  padding: 75px;
+.skills-section > li {
+  padding-left: 75px;
 }
 
-
+.education-section {
+  padding-bottom:20px;
+}
 /* Projects section */
 
-.projects-section {
-  text-align: center;
-  padding: 35px;
-  background: var(--main-blue);
+.project-section > p {
+  padding: 75px;
 }
 
-.projects-section > p {
-  padding: 75px;
+.project-section {
+  padding-bottom: 10px;
+}
+.project-section > li {
+  padding-left: 75px;
+}
 
+.project-section > a:link {
+  color:black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.project-section > a:hover {
+  color:red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+.education-section > p {
+  padding-bottom: 30px;
+  padding-left: 75px;
+}
+
+.education-section > li {
+  padding-left: 75px;
 }
 
 .projects-section-header {
