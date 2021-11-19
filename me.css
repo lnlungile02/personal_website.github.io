@@ -1,382 +1,236 @@
-/* Custom properties/variables  */
-:root {
-  --main-white: #f0f0f0;
-  --main-red: #be3144;
-  --main-blue: #45567d;
-  --main-gray: #303841;
-}
-
-/* Base reset */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* box-sizing and font sizing */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-
-
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-
-.welcome-image {
-    width: 100%;
-    height: auto;
-  }
-
-
-
-/* 1200px / 16px = 75em */
-@media (max-width: 75em) {
-  html {
-    font-size: 60%;
-  }
-}
-
-/* 980px / 16px = 61.25em */
-@media (max-width: 61.25em) {
-  html {
-    font-size: 58%;
-  }
-}
-
-/* 460px / 16px = 28.75em */
-@media (max-width: 28.75em) {
-  html {
-    font-size: 55%;
-  }
-}
-
-/* Base styles */
-
-body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem; /* 18px */
-  font-weight: 400;
-  line-height: 1.4;
-}
-
-h1,
-h2 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  text-align: left;
-  padding-left: 70px;
-}
-
-h1 {
-  font-size: 6rem;
-}
-
-h2 {
-  font-size: 4.2rem;
-}
-
-ul {
-  list-style: none;
-
-}
-
-a {
-  text-decoration: none;
-  color: var(--main-white);
-}
-
-img {
-  display: block;
-  width: 100%;
-}
-
-/* nav */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color:#be3144;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-}
-
-/* Welcome section */
-
-.welcome-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 80vh;
-  background-color: #000;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
-}
-
-.welcome-section > p {
-  font-size: 3rem;
-  font-weight: 150;
-  font-style: italic;
-  color: var(--main-red);
-}
-.welcome-section > h1 {
-color: var(--main-white);
-}
-
-.skills-section > p {
-  padding-left: 75px;
-  padding-bottom: 20px;
-
-}
-
-.skills-section > li {
-  padding-left: 75px;
-}
-
-.education-section {
-  padding-bottom:20px;
-}
-/* Projects section */
-
-.project-section > p {
-  padding-left: 75px;
-  padding-bottom: 20px;
-}
-
-.project-section {
-  padding-bottom: 20px;
-}
-.project-section > li {
-  padding-left: 75px;
-}
-
-.project-section > a:link {
-  color:black;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.project-section > a:hover {
-  color:red;
-  background-color: transparent;
-  text-decoration: underline;
-}
-.education-section > p {
-  padding-bottom: 30px;
-  padding-left: 75px;
-}
-
-.education-section > li {
-  padding-left: 75px;
-}
-
-.projects-section-header {
-  max-width: 640px;
-  margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
-}
-
-.welcome-section h2 {
-  color: #be3144;
-}
-
-@media (max-width: 28.75em) {
-  .projects-section-header {
-    font-size: 4rem;
-  }
-}
-
-/* "Automagic" image grid using no media queries */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
-  width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-bottom: 6rem;
-}
-
-@media (max-width: 30.625em) {
-  .projects-section {
-    padding: 6rem 1rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.project {
-  background: var(--main-gray);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
-}
-
-.code {
-  color: var(--main-gray);
-  transition: color 0.3s ease-out;
-}
-
-.project:hover .code {
-  color: #ff7f50;
-}
-
-.project-image {
-  height: calc(100% - 6.8rem);
-  width: 100%;
-  object-fit: cover;
-}
-
-.project-title {
-  font-size: 2rem;
-  padding: 2rem 0.5rem;
-}
-
-
-.btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  border-radius: 2px;
-}
-
-.btn-show-all {
-  font-size: 2rem;
-  background: var(--main-gray);
-  transition: background 0.3s ease-out;
-}
-
-.btn-show-all:hover {
-  background: var(--main-red);
-}
-
-.btn-show-all:hover > i {
-  transform: translateX(2px);
-}
-
-.btn-show-all > i {
-  margin-left: 10px;
-  transform: translateX(0);
-  transition: transform 0.3s ease-out;
-}
-
-/* Contact section */
-
-.contact-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 80vh;
-  padding: 0 2rem;
-  background: var(--main-gray);
-}
-
-.contact-section-header > h2 {
-  font-size: 6rem;
-  color: var(--main-white);
-}
-
-@media (max-width: 28.75em) {
-  .contact-section-header > h2 {
-    font-size: 4rem;
-  }
-}
-
-.contact-section-header > p {
-  font-style: italic;
-}
-
-.contact-links {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 980px;
-  margin-top: 4rem;
-  flex-wrap: wrap;
-}
-
-.contact-details {
-  font-size: 2.4rem;
-  text-shadow: 2px 2px 1px #1f1f1f;
-  transition: transform 0.3s ease-out;
-}
-
-.contact-details:hover {
-  transform: translateY(8px);
-}
-
-/* Footer */
-
-footer {
-  font-weight: 300;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 2rem;
-  background: var(--main-gray);
-  border-top: 4px solid var(--main-red);
-}
-
-footer > p {
-  margin: 2rem;
-}
-
-footer i {
-  vertical-align: middle;
-}
-
-@media (max-width: 28.75em) {
-  footer {
-    flex-direction: column;
-    text-align: center;
-  }
-}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="me.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #be3144;
+            color: white;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child) {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+
+            @media screen and (max-width: 600px) {
+                .welcome-section {
+                    justify-content: center;
+                    align-items: center;
+                    height: auto;
+                }
+
+                .welcome-section p {
+                    text-align: center;
+                    font-size: medium;
+                }
+
+                .welcome-section h1 {
+                    text-align: left;
+                    font-size: large;
+                }
+
+                .welcome-section h2 {
+                    text-align: center;
+                    align-items: center;
+                    font-size: large;
+                    color: #be3144;
+                }
+            }
+
+            .skill-section p {
+                padding: 35px;
+            }
+
+            @media screen and (max-width: 600px) {
+                .contact-section {
+                    justify-content: center;
+                    align-items: center;
+                    height: auto;
+                }
+
+                .contact-section h2 {
+                    text-align: center;
+                    align-items: center;
+                    font-size: large;
+                }
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+            .topnav.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .topnav.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="topnav" id="myTopnav">
+        <a href="#welcome" class="active">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- END NAV -->
+    <div id="welcome_photo" class="welcome_pic">
+        <img class="welcome-image" src="Lungile_Njakazi.png" alt="Lungile_Njakazi" style="width:100%;height: auto"
+            style="position: absolute" />
+    </div>
+    <!-- START WELCOME SECTION -->
+    <section id="welcome" class="welcome-section">
+        <h1>Hey I am Lungile Njakazi</h1>
+        <h2>A Data Engineering Recruit at Umuzi</h2>
+        <p>“I joined UMUZI in 2021 and I am eager to put what I’ve
+            learned in the classroom into use in a practical sense.
+            I pride myself on being detail-oriented, analytical, and driven.
+            Please see my cv for more Information
+            <a href="LM NJAKAZI CV.pdf">My CV</a>.”
+        </p>
+
+    </section>
+
+    <!-- END WELCOME SECTION -->
+
+    <!-- START SKILLS SECTION -->
+
+    <section id="skills" class="skills-section">
+
+        <h2 font color="black">My Skills</h2>
+        <p>
+            As a Data Engineering intern I am still working on refining my skills which include:
+            <li>Programming Languages: Python</li>
+            <li>Web Technologies: HTML. CSS</li>
+            <li>Data Analysis: numpy, R</li>
+            <li>Software Engineering: Test Driven Development</li>
+            <li>Problem Solving</li>
+            <li>Communication Skills</li>
+            <li>Basic Excel</li>
+        </p>
+    </section>
+
+    <!-- END SKILLS SECTION -->
+    <!-- START Education SECTION -->
+
+    <section id="education" class="education-section">
+        <h2>My Education</h2>
+        <p>
+            B.Sc Information Technology Jan 2014 — Dec 2018
+            <br>Richfield Graduate Institute of Technology
+        </p>
+        <p>
+            Supplementary Online Courses:<br>
+            Datacamp:
+            <li>Streamlined Data Ingestion with pandas</li>
+            <li>Introduction to Data Engineering</li>
+            <li>Data Engineering for Everyone</li>
+        </p>
+
+
+    </section>
+
+    <!-- END Education SECTION -->
+
+    <!-- START PROJECT SECTION -->
+
+    <section id="project" class="project-section">
+        <h2>My Projects</h2>
+        <p>I have not completed any projects as yet, I will add them as I go:</p>
+    </section>
+
+    <!-- END PROJECT SECTION -->
+
+
+    <!-- START CONTACT SECTION -->
+
+    <section id="contact" class="contact-section">
+        <div class="contact-section-header">
+            <h2>Contact Information</h2>
+        </div>
+        <div class="contact-links">
+            <a href="https://facebook.com/lungileminenhle" target="_blank" class="btn contact-details"><i
+                    class="fab fa-facebook-square"></i> Facebook</a>
+            <a id="profile-link" href="https://github.com/lnlungile02" target="_blank" class="btn contact-details"><i
+                    class="fab fa-github"></i> GitHub</a>
+        </div>
+    </section>
+
+    <!-- END CONTACT SECTION -->
+    <!-- START FOOTER SECTION -->
+
+    <footer>
+
+
+    </footer>
+
+    <!-- END FOOTER SECTION -->
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
