@@ -156,14 +156,14 @@ img {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
 .welcome-section > p {
   font-size: 3rem;
-  font-weight: 200;
+  font-weight: 150;
   font-style: italic;
   color: var(--main-red);
 }
@@ -192,7 +192,7 @@ color: var(--main-white);
 }
 
 .project-section {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 .project-section > li {
   padding-left: 75px;
