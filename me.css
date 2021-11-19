@@ -147,7 +147,6 @@ img {
   }
 }
 
-
 /* Welcome section */
 
 .welcome-section {
@@ -222,6 +221,10 @@ color: var(--main-white);
   max-width: 640px;
   margin: 0 auto 6rem auto;
   border-bottom: 0.2rem solid var(--main-white);
+}
+
+.welcome-section h2 {
+  color: #be3144;
 }
 
 @media (max-width: 28.75em) {
