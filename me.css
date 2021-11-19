@@ -222,7 +222,14 @@ text-align: center;
 
 .welcome-section h2 {
   color: #be3144;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
+}
+
+.welcome-section h1 {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .welcome-section p {
